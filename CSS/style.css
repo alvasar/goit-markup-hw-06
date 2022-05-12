@@ -653,6 +653,7 @@ FOOTER
 
 .footer .social-links {
     display: inline-block;
+    margin-right: 93px;
 }
 .footer .text {
     margin-bottom: 20px;
@@ -668,6 +669,16 @@ FOOTER
     background-color: var(--icon-footer-cl);
     transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
+
+.footer .label {
+    position: relative;
+}
+
+.footer .input {
+    width: 358px;
+}
+
+
 
 /*
 ---------------------------------------
