@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module-05</title>
+    <title>Module-06</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -85,39 +85,47 @@
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <form class="form" autocomplete="off">
-                <h2>Оставьте свои данные, мы вам перезвоним</h2>
+                <p class="form-title">
+                  Оставьте свои данные, мы вам перезвоним
+                </p>
 
                 <label class="form-field">
+                  <span class="form-label">Имя</span>
                   <input
                     class="form-input"
                     type="text"
                     name="name"
-                    id="name"
                     placeholder=" "
                   />
-                  <span class="form-label">Имя</span>
-                  <span class="icon"></span>
+                  <svg
+                    class="icon-person"
+                    aria-label="номер телефона"
+                    width="10"
+                    height="16"
+                  >
+                    <use href="./images/person.svg"></use>
+                  </svg>
                 </label>
 
                 <label class="form-field">
+                  <span class="form-label">Телефон</span>
                   <input
                     class="form-input"
                     type="tel"
                     name="tel"
                     placeholder=" "
                   />
-                  <span class="form-label">Телефон</span>
                   <span class="icon"></span>
                 </label>
 
                 <label class="form-field">
+                  <span class="form-label">email</span>
                   <input
                     class="form-input"
                     type="email"
                     name="email"
                     placeholder=" "
                   />
-                  <span class="form-label">email</span>
                   <span class="icon"></span>
                 </label>
 
