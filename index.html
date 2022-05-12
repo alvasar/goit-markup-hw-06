@@ -84,12 +84,70 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <p class="visually-hidden">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-                ad consequuntur molestiae repellat et illo dolorum a. Quisquam
-                aliquam explicabo, ut nesciunt at mollitia beatae accusamus modi
-                praesentium, porro quasi?
-              </p>
+              <form class="form" autocomplete="off">
+                <h2>Оставьте свои данные, мы вам перезвоним</h2>
+
+                <label class="form-field">
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder=" "
+                  />
+                  <span class="form-label">Имя</span>
+                  <span class="icon"></span>
+                </label>
+
+                <label class="form-field">
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="tel"
+                    placeholder=" "
+                  />
+                  <span class="form-label">Телефон</span>
+                  <span class="icon"></span>
+                </label>
+
+                <label class="form-field">
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="email"
+                    placeholder=" "
+                  />
+                  <span class="form-label">email</span>
+                  <span class="icon"></span>
+                </label>
+
+                <div class="form-field">
+                  <label class="form-label" for="coment">Комментарий</label>
+                  <textarea
+                    class="coment"
+                    name=""
+                    id="coment"
+                    cols="30"
+                    rows="8"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </div>
+
+                <div class="form-field">
+                  <label for="policy"
+                    >Соглашаюсь с рассылкой и принимаю
+                    <a
+                      href="http://index.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Условия Договора</a
+                    ></label
+                  >
+                  <input type="checkbox" name="policy" id="policy" />
+                </div>
+                <button class="btn" type="submit">Отправить</button>
+              </form>
+
               <button class="modal-x" type="button" data-modal-close>
                 <img
                   src="./images/close-black.svg"
@@ -711,11 +769,11 @@
         <div class="form">
           <p class="text">Подпишитесь на рассылку</p>
 
-          <label class="label">
-            <input class="input" type="email" />
-            <span class="name">E-mail</span>
+          <label class="field">
+            <input class="input" type="email" placeholder=" " />
+            <span class="label">E-mail</span>
           </label>
-          <button class="btn" type="submit">Отправить</button>
+          <button class="btn" type="submit">Подписаться</button>
         </div>
       </div>
     </footer>
