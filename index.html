@@ -84,86 +84,105 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <form class="form" autocomplete="off">
-                <b class="form-title"
-                  >Оставьте свои данные, мы вам перезвоним</b
-                >
+              <form class="modal-form" autocomplete="off">
+                <p class="title">Оставьте свои данные, мы вам перезвоним</p>
 
-                <label class="form-field">
+                <label class="field">
+                  <span class="label">Имя</span>
                   <input
-                    class="form-input"
+                    class="input"
                     type="text"
                     name="name"
-                    id="name"
                     placeholder=" "
                   />
-                  <span class="form-label">Имя</span>
-                  <span class="icon">
-                    <svg
-                      class="icon-person"
-                      aria-label="номер телефона"
-                      width="10"
-                      height="16"
-                    >
-                      <use href="./images/person.svg"></use></svg
-                  ></span>
+                  <svg
+                    class="icon"
+                    aria-label="имя клиента"
+                    width="18"
+                    height="18"
+                  >
+                    <use href="./images/icons.svg#icon-persone"></use>
+                  </svg>
                 </label>
 
-                <label class="form-field">
-                  <input
-                    class="form-input"
-                    type="tel"
-                    name="tel"
-                    placeholder=" "
-                  />
-                  <span class="form-label">Телефон</span>
-                  <span class="icon"></span>
+                <label class="field">
+                  <span class="label">Телефон</span>
+                  <input class="input" type="tel" name="tel" placeholder=" " />
+                  <svg
+                    class="icon"
+                    aria-label="телефон клиента"
+                    width="18"
+                    height="18"
+                  >
+                    <use href="./images/icons.svg#icon-phone-form"></use>
+                  </svg>
                 </label>
 
-                <label class="form-field">
+                <label class="field">
+                  <span class="label">Почта</span>
                   <input
-                    class="form-input"
+                    class="input"
                     type="email"
                     name="email"
                     placeholder=" "
                   />
-                  <span class="form-label">email</span>
-                  <span class="icon"></span>
+                  <svg
+                    class="icon"
+                    aria-label="почта клиента"
+                    width="18"
+                    height="18"
+                  >
+                    <use href="./images/icons.svg#icon-email-form"></use>
+                  </svg>
                 </label>
 
-                <div class="form-field">
-                  <label class="label" for="coment">Комментарий</label>
+                <label class="field" for="coment">
+                  <span class="label">Комментарий</span>
                   <textarea
-                    class="coment"
+                    class="comment"
                     name=""
                     id="coment"
-                    cols="30"
-                    rows="8"
+                    cols="10"
+                    rows="4"
                     placeholder="Введите текст"
                   ></textarea>
-                </div>
+                </label>
 
-                <div class="form-field">
-                  <label for="policy"
+                <label class="checkbox-field">
+                  <input
+                    class="checkbox visually-hidden"
+                    type="checkbox"
+                    name="policy"
+                    value="policy"
+                  />
+                  <svg class="icon" aria-label="check" width="16" height="15">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg>
+
+                  <span class="label"
                     >Соглашаюсь с рассылкой и принимаю
                     <a
-                      href="http://index.html"
+                      class="link"
+                      href="./index.html"
                       target="_blank"
                       rel="noopener noreferrer"
                       >Условия Договора</a
-                    ></label
+                    ></span
                   >
-                  <input type="checkbox" name="policy" id="policy" />
-                </div>
+                </label>
+
                 <button class="btn" type="submit">Отправить</button>
               </form>
+
               <button class="modal-x" type="button" data-modal-close>
-                <img
-                  src="./images/close-black.svg"
-                  alt="Закрыть"
+                <svg
+                  class="icon-close"
+                  aria-label="Закрыть окно"
                   width="18"
                   height="18"
-                />
+                >
+                  <use href="./images/icons.svg#icon-close"></use>
+                </svg>
               </button>
             </div>
           </div>
@@ -775,14 +794,19 @@
           </ul>
         </div>
 
-        <div class="form">
+        <div class="footer-form">
           <p class="text">Подпишитесь на рассылку</p>
 
           <label class="field">
             <input class="input" type="email" placeholder=" " />
             <span class="label">E-mail</span>
           </label>
-          <button class="btn" type="submit">Подписаться</button>
+          <button class="btn" type="submit">
+            Подписаться
+            <svg class="icon" aria-label="подписаться" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
