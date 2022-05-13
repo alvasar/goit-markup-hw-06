@@ -85,52 +85,54 @@
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <form class="form" autocomplete="off">
-                <p class="form-title">
-                  Оставьте свои данные, мы вам перезвоним
-                </p>
+                <b class="form-title"
+                  >Оставьте свои данные, мы вам перезвоним</b
+                >
 
                 <label class="form-field">
-                  <span class="form-label">Имя</span>
                   <input
                     class="form-input"
                     type="text"
                     name="name"
+                    id="name"
                     placeholder=" "
                   />
-                  <svg
-                    class="icon-person"
-                    aria-label="номер телефона"
-                    width="10"
-                    height="16"
-                  >
-                    <use href="./images/person.svg"></use>
-                  </svg>
+                  <span class="form-label">Имя</span>
+                  <span class="icon">
+                    <svg
+                      class="icon-person"
+                      aria-label="номер телефона"
+                      width="10"
+                      height="16"
+                    >
+                      <use href="./images/person.svg"></use></svg
+                  ></span>
                 </label>
 
                 <label class="form-field">
-                  <span class="form-label">Телефон</span>
                   <input
                     class="form-input"
                     type="tel"
                     name="tel"
                     placeholder=" "
                   />
+                  <span class="form-label">Телефон</span>
                   <span class="icon"></span>
                 </label>
 
                 <label class="form-field">
-                  <span class="form-label">email</span>
                   <input
                     class="form-input"
                     type="email"
                     name="email"
                     placeholder=" "
                   />
+                  <span class="form-label">email</span>
                   <span class="icon"></span>
                 </label>
 
                 <div class="form-field">
-                  <label class="form-label" for="coment">Комментарий</label>
+                  <label class="label" for="coment">Комментарий</label>
                   <textarea
                     class="coment"
                     name=""
@@ -155,7 +157,6 @@
                 </div>
                 <button class="btn" type="submit">Отправить</button>
               </form>
-
               <button class="modal-x" type="button" data-modal-close>
                 <img
                   src="./images/close-black.svg"

@@ -350,8 +350,9 @@ body {
 }
 
 .form-title {
+    display: block;
     margin-top: 0;
-    margin-bottom: 12px; 
+    margin-bottom: 24px;
 
     font-weight: 700;
     font-size: 20px;
@@ -362,13 +363,19 @@ body {
 }
 
 .form-field {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
-.form-label {    
-    text-align: left;
+.form-label {
+    position: absolute;
+    top: -50%;
+    left: 40px;
+    
+    display: block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -377,10 +384,7 @@ body {
     margin-bottom: 4px;
 }
 
-
 .form-input {
-    position: relative;
-
     width: 100%;
     margin: 0;
     padding-left: 40px;
@@ -389,27 +393,22 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
-.form-input:focus,
-.form-input:active {
-    outline: 0;
-    border-color: var(--accent-color);
-}
 
-.icon-person {
+
+
+.icon {
     position: absolute;
     top: 50%;
     left: 15px;
-    fill: #000000;
 
-    /* transform: translateY(-50%); */
+    transform: translateY(-50%);
 
     display: inline-block;
     width: 20px;
     height: 20px;
     background-color: tomato;
 }
-
-.form-input:not(:placeholder-shown)+.form-label {
+.form-input:not(:placeholder-shown) + .form-label {
     /* transform: rotateY(50px); */
 }
 
