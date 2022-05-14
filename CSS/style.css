@@ -818,24 +818,17 @@ body {
     position: relative;
 }
 
-.footer .label {
-    position: absolute;
-    top: 0;
-    left: 15px;
 
-    display: flex;
-    align-items: center;
-
+.footer .input::placeholder {
+    margin-left: 15px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     
     color: var(--footer-text-color);
-
-    transition: transform var(--transition-duration) var(--transition-timing-function),
-    color var(--transition-duration) var(--transition-timing-function);
 }
+
 
 .footer .input {
     outline: 0;
